@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Oswald:wght@300;500&display=swap');
+:root {
+    --primary: #C09265; 
+    --bg-color:hwb(30 73% 0%) ;
+    --niceon: #8a4500;
+}
+body { 
+    background-color: var(--bg-color);
+}
+/* start navbar */
+.navbar{
+    background-color: var(--bg-color);
+}
+.navbar-header {
+    font-family: Oswald ; 
+    float: left;
+    padding: 0px;
+    text-align: center;
+    width: 15%;
+}
+.navbar-brand {
+    float:none;
+    font-size: 26px;
+    font-family: Oswald ; 
+}
+.nav-item { 
+    font-family: Oswald ; 
+    margin-left: 90px;
+    font-size: 24px;
+}
+.nav-item li a{ 
+    color: #8a4500 !important;
+}
+
+/* end navbar */
+
+/* start landing */ 
+.landing { 
+    background-color: var(--bg-color);
+}
+
+.duo{ 
+    top: 100px;
+    left: 45%;
+}
+@media screen and (min-width: 620px) {
+    .duo p{
+        font-family: Grape Nuts;
+        font-size: 150px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .duo p{
+        font-family: Grape Nuts;
+        font-size: 80px;
+    }
+}
+.duo h1{
+    left: 35%;
+    font-family: "Oswald";
+}
+.duo a { 
+    margin-top: 15%;
+    font-size: 20px;
+}
+.hero { 
+    background-color: var(--bg-color);
+}
+/* end landing */ 
+
+/* start  about us  */ 
+.aboutus {
+    background-color: var(--bg-color);
+}
+.aboutus img { 
+    height: 500px;
+    width: 400px;
+}
+.aboutus .text{
+    text-align: center;
+    float: right;
+}
+.aboutus h1{ 
+    font-family: "Oswald";
+    color: #8a4500;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.aboutus .text p{
+    font-size: 23px;
+    font-family: "Custom-Body-Font,Helvetica";
+}
+/* end  about us  */
+
+/* start FAQ section */ 
+.faq-heading{
+    margin-top: 10%;
+    color: #8a4500;
+    font-family: "Oswald";
+    text-align: center;
+    border-bottom: #777;
+    padding: 20px 60px;
+}
+.faq-container{
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+.hr-line{
+  width: 60%;
+  margin: auto;
+  
+}
+/* Style the buttons that are used to open and close the faq-page body */
+.faq-page {
+    /* background-color: #eee; */
+    color: #444;
+    cursor: pointer;
+    padding: 30px 20px;
+    width: 60%;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin: auto;
+}
+.faq-body{
+    margin: auto;
+    /* text-align: center; */
+   width: 50%; 
+   padding: auto;
+   
+}
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+/* Style the faq-page panel. Note: hidden by default */
+.faq-body {
+    padding: 0 18px;
+    background-color: var(--bg-color);
+    display: none;
+    overflow: hidden;
+    font-family: "Custom-Body-Font,Helvetica";
+}
+.faq-page:after {
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.FAAAQ { 
+    background-color: var(--bg-color);
+    font-family: "Custom-Body-Font,Helvetica";
+}
+.FAAAQ h1{ 
+    font-size: 32px;
+}
+.FAAAQ ::after { 
+    background-color: var(--bg-color);
+}
+
+/* start slider */ 
+
+.slide{ 
+    background-color: white;
+}
+.slide .row img{
+    height: 300px;
+    width: 300px;
+    margin-left: 30px;
+}
+.slide .row{
+    border: black;
+    border-radius: 15px;
+    font-family: "Custom-Body-Font,Helvetica";
+}
+.slide h1 { 
+    font-family: "Oswald";
+    color: #8a4500;
+    padding-top: 7%;
+    padding-bottom: 7%;
+}
+.slide .row a{ 
+    margin-left: 28%;
+    margin-bottom: 15%;
+}
+.slide .row h5{ 
+    margin-top: -5%;
+}
+.slide .row .col:hover{
+    background-color: rgb(211, 211, 211);
+}
+
+/* Start contact */
+  .contact {
+    border-radius: 5px;
+    background-color:var(--bg-color);
+    padding: 20px;
+  }
+.contact .container{ 
+    position: relative;
+}
+.contact img{ 
+    position: absolute;
+    right: 10%;
+    top: 20%;
+    height: 300px;
+    width: 400px;
+}
+
+.contact input {
+    width: 450px;
+  }
+.contact h1{ 
+    color: #8a4500;
+    font-family: Oswald;
+}
+.contact label{ 
+    font-family: "Custom-Body-Font,Helvetica";
+    font-size: 23px;
+}
+.contact .btn{
+    width: 200px;
+    background-color: #8a4500;
+    color: white;
+}
+/* Start footer */
+
+.footer-dark ul {
+    padding:0;
+    list-style:none;
+    line-height:1.6;
+    font-size:14px;
+    margin-bottom:0;
+  }
+  
+  .footer-dark ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.6;
+  }
+  
+  .footer-dark ul a:hover {
+    opacity:0.8;
+  }
+  
+  @media (max-width:767px) {
+    .footer-dark .item:not(.social) {
+      text-align:center;
+      padding-bottom:20px;
+    }
+  }
+  
+  .footer-dark .item.text {
+    margin-bottom:36px;
+  }
+  
+  @media (max-width:767px) {
+    .footer-dark .item.text {
+      margin-bottom:0;
+    }
+  }
+  
+  .footer-dark .item.text p {
+    opacity:0.6;
+    margin-bottom:0;
+  }
+  
+  .footer-dark .item.social {
+    text-align:center;
+  }
+  
+  @media (max-width:991px) {
+    .footer-dark .item.social {
+      text-align:center;
+      margin-top:20px;
+    }
+  }
+  
+  .footer-dark .item.social > a {
+    margin-top: 10%;
+    font-size:20px;
+    width:36px;
+    height:36px;
+    line-height:36px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    box-shadow:0 0 0 1px rgba(255,255,255,0.4);
+    margin:0 8px;
+    color:rgb(255, 255, 255);
+    opacity:0.75;
+  }
+  
+  .footer-dark .item.social > a:hover {
+    opacity:0.9;
+  }
+  
+  .footer-dark .copyright {
+    text-align:center;
+    padding-top:24px;
+    opacity:0.3;
+    font-size:13px;
+    margin-bottom:0;
+  }
+  
+.footer-dark{ 
+    color: white ;
+    background-color: #000000;
+    letter-spacing: 1px;
+}
